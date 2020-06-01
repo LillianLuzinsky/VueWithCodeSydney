@@ -9,3 +9,5 @@
 
 ### Day 1:
 
+1) Installing vue into our project
+2) Created a vue instance
