@@ -7,6 +7,8 @@
 1) Take a refresher course learning beginners Vue 3
 2) Learning along with a team of beginners.
 
+---
+
 ### Day 1:
 
 1) Installing vue into our project
