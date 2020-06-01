@@ -15,5 +15,7 @@
  
 #### What I've learned:
 
--- Vue instance is the heart of the application.
--- It plugs in to an element and that element displays the expression of instance's data. In this case the expression {{ product }} instanciates 'Socks'
+ 1) Vue instance is the heart of the application.
+ 2) It plugs in to an element and that element displays the expression of instance's data. In this case the expression {{ product }} instanciates 'Socks'
+
+---
