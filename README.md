@@ -37,8 +37,10 @@
 
 1) Conditional Rendering, which is display the product is in stock or not
 2) How to use more complex conditional rendering
+3) Apply v-show
 
 ### What I've learned:
 
 1) How to write conditional rendering with v-if and v-else.
 2) How to implement v-else-if
+3) How to use v-show and how it displayed on the DOM
