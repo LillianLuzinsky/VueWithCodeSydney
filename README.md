@@ -24,4 +24,8 @@
 
 ### Day 2:
 
-1) Attribute Binding
+1) Attribute Binding with an image
+
+### What I've learned:
+
+1) How to add an image into the Vue Instance and then use v-bind in the html file
