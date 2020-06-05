@@ -36,3 +36,9 @@
 ### Day 3:
 
 1) Conditional Rendering, which is display the product is in stock or not
+2) How to use more complex conditional rendering
+
+### What I've learned:
+
+1) How to write conditional rendering with v-if and v-else.
+2) How to implement v-else-if
