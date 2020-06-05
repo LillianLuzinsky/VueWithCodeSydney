@@ -21,3 +21,7 @@
  2) It plugs in to an element and that element displays the expression of instance's data. In this case the expression {{ product }} instanciates 'Socks'
 
 ---
+
+### Day 2:
+
+1) Attribute Binding
