@@ -30,3 +30,9 @@
 
 1) How to add an image into the Vue Instance and then use v-bind in the html file
 2) Some examples to use v-bind: :alt="description", :href="url", :title="toolTip, :class="isActive", :style="isStyled", :disabled="isDisabled"
+
+---
+
+### Day 3:
+
+1) Conditional Rendering, which is display the product is in stock or not
