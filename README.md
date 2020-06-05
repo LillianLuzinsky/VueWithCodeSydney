@@ -29,3 +29,4 @@
 ### What I've learned:
 
 1) How to add an image into the Vue Instance and then use v-bind in the html file
+2) Some examples to use v-bind: :alt="description", :href="url", :title="toolTip, :class="isActive", :style="isStyled", :disabled="isDisabled"
