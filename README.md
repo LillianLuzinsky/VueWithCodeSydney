@@ -53,6 +53,7 @@
 2) Display details list rendering onto the page with the v-for loop
 3) How to write alias to display each string of the details array
 4) How to render a more complex list with dot notation
+5) How to us :key bind to keep track of each nodes identity.
 
 ### What I've learned
 
