@@ -23,7 +23,7 @@ var app = new Vue({
         addToCart () {
             this.cart += 1
           },
-          remove () {
+        remove () {
             if (this.cart === 0) return
             this.cart -= 1
           },

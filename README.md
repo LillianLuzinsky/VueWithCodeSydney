@@ -76,3 +76,4 @@
 
 1) Other event handlers include: form @submit and input @keyup.enter="send"
 2) .enter is a modifier. When the .enter is listened after key is pressed, a send method is triggered
+3) I created a method that removed items from the cart without going below 0
