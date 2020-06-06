@@ -50,8 +50,11 @@
 ### Day 4:
 
 1) Added products details in the data object
-2) Display details list rendering onto the page
+2) Display details list rendering onto the page with the v-for loop
+3) How to write alias to display each string of the details array
 
 ### What I've learned
 
-1)
+1) The expression 'details' from the HTML refers to the 'details' collection from our data.
+2) 'detail' in details is the alias of the element that we're itirating on as we loop through the 'details' collection
+3) We use the same 'detail' alias in the {{ detail }} expresion to loop through each item of the collection
