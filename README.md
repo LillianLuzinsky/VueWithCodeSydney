@@ -70,7 +70,9 @@
 2) Writing methods into the VUE instance
 3) How to trigger methods with event handling
 4) How to trigger another event to hover over different data images
+5) Create v-on and function shorthands
 
-### What I've learned
+### Other things I've learned
 
-1) 
+1) Other event handlers include: form @submit and input @keyup.enter="send"
+2) .enter is a modifier. When the .enter is listened after key is pressed, a send method is triggered
