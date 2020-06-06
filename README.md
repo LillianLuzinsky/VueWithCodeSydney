@@ -61,3 +61,16 @@
 2) 'detail' in details is the alias of the element that we're itirating on as we loop through the 'details' collection
 3) We use the same 'detail' alias in the {{ detail }} expresion to loop through each item of the collection.
 4) I added a new list of objects called 'variants' and was able to display only the color of the variant by writing the expression with dot notation = {{ varaint.variantColor}}
+
+---
+
+### Day 5:
+
+1) Event handling with v-on to increment cart
+2) Writing methods into the VUE instance
+3) How to trigger methods with event handling
+4) How to trigger another event to hover over different data images
+
+### What I've learned
+
+1) 
