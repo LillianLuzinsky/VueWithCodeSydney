@@ -44,3 +44,14 @@
 1) How to write conditional rendering with v-if and v-else.
 2) How to implement v-else-if
 3) How to use v-show and how it displayed on the DOM
+
+---
+
+### Day 4:
+
+1) Added products details in the data object
+2) Display details list rendering onto the page
+
+### What I've learned
+
+1)
