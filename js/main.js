@@ -15,6 +15,6 @@ var app = new Vue({
                 variantColor: "blue"
             }
         ],
-        sizes: [8, 9, 10, 11]
+        cart: 0
     }
 })
