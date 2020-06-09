@@ -88,3 +88,10 @@
 ### Things I've learned
 
 1) The way to write :style is that we put the css property on the left and the right will be the expression from the Vue data
+2) If we have multiple style binding we can put them as a styleObject in our data. Eg: 
+data: {
+    styleObject: {
+        color: 'red',
+        fontSize: 13px
+    }
+}
