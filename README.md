@@ -95,3 +95,15 @@ data: {
         fontSize: 13px
     }
 }
+3) If there are multiple styleObjects in the data, it can be :style bind into an array. Eg:
+data:{
+    styleObject1:{<br>
+        color: 'red',
+        fontsize: '13px'
+    },
+    styleObject2:{
+        margin: '5px',
+        padding: '20px'
+    }
+}
+
