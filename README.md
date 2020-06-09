@@ -86,3 +86,5 @@
 2) Class Binding
 
 ### Things I've learned
+
+1) The way to write :style is that we put the css property on the left and the right will be the expression from the Vue data
