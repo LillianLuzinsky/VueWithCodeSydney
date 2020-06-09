@@ -107,4 +107,4 @@ data:{</br>
     }</br>
 }</br>
 </br>
-<p :style="[styleObject1], [styleObject2]"></p>
+p :style="[styleObject1], [styleObject2]"
