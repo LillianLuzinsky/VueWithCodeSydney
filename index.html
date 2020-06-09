@@ -28,9 +28,9 @@
             class="color-box"
             :style="{ background: variant.variantColor }"
             @mouseover="updateProduct(variant.variantImage)">
-        </div>>
+        </div>
             
-        <button v-on:click="addToCart" >Add To Cart</button>
+        <button v-on:click="addToCart" :disabled="!inStock">Add To Cart</button>
         <button @click="remove">Remove</button>
 
         <div class="cart">

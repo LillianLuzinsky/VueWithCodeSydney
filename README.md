@@ -83,7 +83,7 @@
 ### Day 6:
 
 1) Style Binding
-2) Class Binding
+2) Disabling the cart button when product is out of stock
 
 ### Things I've learned
 
@@ -106,5 +106,4 @@ data:{</br>
         padding: '20px'</br>
     }</br>
 }</br>
-</br>
 p :style="[styleObject1], [styleObject2]"
