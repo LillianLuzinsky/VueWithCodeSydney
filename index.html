@@ -26,10 +26,10 @@
         <div v-for="variant in variants" 
             :key="variant.variantId"
             class="color-box"
-            :style="{ backgroundColor: variant.variantColor }"
+            :style="{ background: variant.variantColor }"
             @mouseover="updateProduct(variant.variantImage)">
-        </div>
-
+        </div>>
+            
         <button v-on:click="addToCart" >Add To Cart</button>
         <button @click="remove">Remove</button>
 
