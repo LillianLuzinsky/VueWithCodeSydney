@@ -84,6 +84,7 @@
 
 1) Style Binding
 2) Disabling the cart button when product is out of stock
+3) Class binding by making the 'Add to Cart' button looked disabled
 
 ### Things I've learned
 
