@@ -117,3 +117,5 @@ p :style="[styleObject1], [styleObject2]"
 1) Computed Properties
 
 ### Things I've learned
+
+1) How to display the brand next to the product with computed properties.
