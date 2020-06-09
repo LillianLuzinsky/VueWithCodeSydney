@@ -109,3 +109,11 @@ data:{</br>
 }</br>
 p :style="[styleObject1], [styleObject2]"
 4) The difference between :style and :class binding and when to use them. We add :class binding whether our data changes from true or false
+
+---
+
+### Day 7:
+
+1) Computed Properties
+
+### Things I've learned
