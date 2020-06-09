@@ -88,22 +88,23 @@
 ### Things I've learned
 
 1) The way to write :style is that we put the css property on the left and the right will be the expression from the Vue data
-2) If we have multiple style binding we can put them as a styleObject in our data. Eg: 
+2) If we have multiple style binding we can put them as a styleObject in our data. Eg: </br>
 data: {</br>
     styleObject: {</br>
         color: 'red',</br>
         fontSize: 13px</br>
     }</br>
 }
-3) If there are multiple styleObjects in the data, it can be :style bind into an array. Eg:
-data:{
+3) If there are multiple styleObjects in the data, it can be :style bind into an array. Eg:</br>
+data:{</br>
     styleObject1:{</br>
-        color: 'red',
-        fontsize: '13px'
-    },
-    styleObject2:{
-        margin: '5px',
-        padding: '20px'
-    }
-}
-
+        color: 'red',</br>
+        fontsize: '13px'</br>
+    },</br>
+    styleObject2:{</br>
+        margin: '5px',</br>
+        padding: '20px'</br>
+    }</br>
+}</br>
+</br>
+<p :style="[styleObject1], [styleObject2]"></p>
