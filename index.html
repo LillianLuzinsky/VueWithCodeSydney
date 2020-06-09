@@ -16,7 +16,7 @@
 
       <div class="product-info">
         <h1>{{ product }}</h1>
-        <p v-show="inStock">In Stock</p>
+        <p :class="{ outOfStock: !inStock }">In Stock</p>
         <p v-else>Out of sale</p>
 
         <ul>
