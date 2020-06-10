@@ -3,22 +3,19 @@ var app = new Vue({
     data: {
         brand: 'Vue Mastery',
         product: 'Socks',
-        selectedVariant: 0,
+        image: './assets/vmSocks-green-onWhite.jpg',
+        inStock: true,
         details: ["80% cotton", "20% polyester", "Gender-neutral"],
         variants: [
             {
                 variantId: 2234,
                 variantColor: "green",
                 variantImage: './assets/vmSocks-green-onWhite.jpg',
-                variantQuantity: 10,
-                variantOnSale: true
             },
             {
                 variantId: 2235,
                 variantColor: "blue",
                 variantImage: './assets/vmSocks-blue-onWhite.jpg',
-                variantQuantity: 0,
-                variantOnSale: false
             }
         ],
         cart: 0   
@@ -31,19 +28,8 @@ var app = new Vue({
             if (this.cart === 0) return
             this.cart -= 1
           },
-        updateProduct(index) {
-            this.selectedVariant = index
+        updateProduct(variantImage) {
+            this.image = variantImage
         }
     },
-    computed: {
-        onSale(){
-            return this.brand + ' ' + this.product
-        },
-        image(){
-            return this.variants[this.selectedVariant].variantImage
-        },
-        inStock(){
-            return this.variants[this.selectedVariant].variantQuantity
-        },
-    }
 })
