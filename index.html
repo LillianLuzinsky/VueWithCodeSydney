@@ -11,14 +11,14 @@
 
     <div id="app">
       <div class="product-image">
-        <img v-bind:src="image" alt="">
+        <img v-bind:src="image" alt="Vue socks">
       </div>
 
       <div class="product-info">
         <h1>{{ product }}</h1>
         <p v-if="inStock">In Stock</p>
         <p v-else :class="{ outOfStock: !inStock }">Out of Stock</p>
-        <p>Shipping: {{ shipping }}</p>
+        <!-- <p>Shipping: {{ shipping }}</p> -->
 
         <ul>
           <li v-for="detail in details">{{ detail }}</li>

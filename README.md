@@ -121,3 +121,10 @@ p :style="[styleObject1], [styleObject2]"
 1) How to display the brand next to the product with computed properties.
 2) Why use computed property instead of a method.
 3) How to use refactor so we can display multiple computed properties.
+
+---
+
+### Day 8:
+
+1) Components
+2) Nested components
