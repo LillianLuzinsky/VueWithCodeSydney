@@ -1,4 +1,29 @@
+Vue.component('product-details', {
+    props: {
+        details: {
+            type: Array,
+            required: true
+        }
+    },
+    template: `
+        <ul>
+            <li v-for="detail in details">{{ detail }}</li>
+        </ul>
+    `,
+    computed: {
+        productDetails() {
+            return this.brand + this.product
+        }
+}
+})
+
 Vue.component('product', {
+    props: {
+        premium: {
+            type: Boolean,
+            required: true
+        }
+    },
     template: `
     <div id="product">
         <div class="product-image">
@@ -9,6 +34,7 @@ Vue.component('product', {
             <h1>{{ product }}</h1>
             <p v-if="inStock">In Stock</p>
             <p v-else :class="{ outOfStock: !inStock }">Out of Stock</p>
+            <p>Shipping: {{ shipping }}</p>
 
             <ul>
                 <li v-for="detail in details">{{ detail }}</li>
@@ -60,8 +86,9 @@ Vue.component('product', {
             this.cart += 1
           },
         remove () {
-            if (this.cart === 0) return 
-            this.cart -= 1
+            if (this.cart === 0) {
+                return this.cart -= 1
+            }
           },
         updateProduct(index) {
             this.selectedVariant = index
@@ -77,11 +104,20 @@ Vue.component('product', {
         },
         inStock() {
             return this.variants[this.selectedVariant].variantQuantity
+        },
+        shipping() {
+            if (this.premium) {
+                return "Free"
+            }
+            return 2.99
         }
     }
 })
 
 var app = new Vue({
     el: '#app',
-    
+    data: {
+        premium: true,
+        details: 'these socks also come in red, yello and orange'
+    }
 })
