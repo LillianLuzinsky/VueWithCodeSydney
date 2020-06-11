@@ -53,7 +53,7 @@ Vue.component('product', {
             <button @click="remove">Remove</button>
         </div>
 
-        <product-review></product-review>
+        <product-review @review-submitted="addReview"></product-review>
     </div>
     `,
     data() {
@@ -75,7 +75,8 @@ Vue.component('product', {
                     variantImage: './assets/vmSocks-blue-onWhite.jpg',
                     variantQuantity: 0
                 }
-            ]
+            ],
+            review: []
         }
     },
     methods: {
@@ -88,6 +89,9 @@ Vue.component('product', {
         updateProduct(index) {
             this.selectedVariant = index
             console.log(index)
+        },
+        addReview(productReview){
+            this.reviews.push(productReview)
         }
     },
     computed: {
@@ -132,6 +136,10 @@ Vue.component('product-review', {
                     <option>1</option>
                 </select>
             </p>
+
+            <p>
+                <input type="submit" value="Submit">
+            </p>
         </form>
     `,
     data(){
@@ -139,6 +147,19 @@ Vue.component('product-review', {
             name: null,
             review: null,
             rating: null
+        }
+    },
+    methods: {
+        onSubmit(){
+            let productReview = {
+                name: this.name,
+                review: this.review,
+                rating: this.rating
+            }
+            this.$emit('review-submitted', productReview)
+            this.name = null
+            this.review = null
+            this.rating = null
         }
     }
 })
