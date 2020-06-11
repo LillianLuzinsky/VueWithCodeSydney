@@ -82,7 +82,7 @@ Vue.component('product', {
             this.$emit('add-to-cart', this.variants[this.selectedVariant].variantId)
           },
           remove () {
-            this.$emit('remove-from-cart')
+            this.$emit('remove-from-cart', this.variants[this.selectedVariant].variantId)
           },
         updateProduct(index) {
             this.selectedVariant = index
@@ -118,9 +118,8 @@ var app = new Vue({
         updateCart(id){
             this.cart.push(id)
         },
-        decreaseCart(){
-            if (this.cart === 0) return
-            this.cart -= 1
+        decreaseCart(id){
+            this.cart.pop(id)
         }
     }
 })
