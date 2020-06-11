@@ -59,7 +59,7 @@ Vue.component('product', {
             <h2>Reviews</h2>
             <p>There are no reviews yet.</p>
             <ul>
-                
+                <li v-for="review in reviews">{{ review }}</li>
             </ul>
         </div>
 
