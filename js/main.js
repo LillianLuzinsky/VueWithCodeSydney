@@ -115,7 +115,7 @@ Vue.component('product', {
 
 Vue.component('product-review', {
     template: `
-        <form class="review-form">
+        <form class="review-form" @submit.prevent="onSubmit">
             <p>
                 <label for="name">Name:</label>
                 <input id="name" v-model="name">
@@ -156,7 +156,6 @@ Vue.component('product-review', {
                 review: this.review,
                 rating: this.rating
             }
-            this.$emit('review-submitted', productReview)
             this.name = null
             this.review = null
             this.rating = null

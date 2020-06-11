@@ -167,3 +167,5 @@ Day 10:
 ### What I've learned:
 
 1) v-bind is only a one way binding from data to the template or html. V-model is a 2 way binding. The input from the template to the data, the data changes, updating the the template simultaneously
+2) Adding the event modifier .prevent onto an event onSubmit will prevent the page from refreshing when we submit the form
+3) adding this.name = null, this.review = null, this.rating = null, will reset the values each time a form is submitted
