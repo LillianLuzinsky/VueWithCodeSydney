@@ -140,3 +140,4 @@ Second, we right the options, which is almost identical to the Vue instance
 2) How to use template literals instead of adding tags into the html file
 3) Why change the data as a function istead of an object. 
 4) A prop allows us to pass data into nested components
+5) Don't delete the Vue instance as you still need it to display the component onto the webpage
