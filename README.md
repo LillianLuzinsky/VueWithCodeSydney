@@ -164,6 +164,7 @@ Day 10:
 1) Forms for user reviews
 2) 2 way data binding with v-model
 3) v-for refresher
+4) Adding required fields to a form
 
 ### What I've learned:
 
