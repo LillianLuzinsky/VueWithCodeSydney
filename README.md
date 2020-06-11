@@ -148,4 +148,7 @@ Day 9:
 
 1) Communicating Events
 
-### What I've learned
+### What I've learned:
+
+1) how to change the scope of Cart(0) from the product component into a global position
+2) How to refactor the app so the Add to Cart and Remove buttons continue functioning. We can't say 'this.cart' if the button no longer is part of the product component
