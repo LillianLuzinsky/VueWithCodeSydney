@@ -161,4 +161,5 @@ Day 9:
 
 Day 10:
 
-1) Forms
+1) Forms for user reviews
+2) 2 way data binding

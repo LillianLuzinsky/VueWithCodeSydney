@@ -51,8 +51,9 @@ Vue.component('product', {
                     :disabled="!inStock"
                     :class="{ disabledButton: !inStock }">Add To Cart</button>
             <button @click="remove">Remove</button>
-
         </div>
+
+        <product-review></product-review>
     </div>
     `,
     data() {
@@ -104,6 +105,17 @@ Vue.component('product', {
                 return "Free"
             }
             return 2.99
+        }
+    }
+})
+
+Vue.component('product-review', {
+    template: `
+        <input v-model="name">
+    `,
+    data(){
+        return{
+            name: null
         }
     }
 })
