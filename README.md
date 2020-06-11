@@ -147,8 +147,10 @@ Second, we right the options, which is almost identical to the Vue instance
 Day 9:
 
 1) Communicating Events
+2) $emit
 
 ### What I've learned:
 
 1) how to change the scope of Cart(0) from the product component into a global position
 2) How to refactor the app so the Add to Cart and Remove buttons continue functioning. We can't say 'this.cart' if the button no longer is part of the product component
+3) $emit allows us to click a button from a child component back to the parent component (works opposite as props?)

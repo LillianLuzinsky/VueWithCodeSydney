@@ -79,7 +79,7 @@ Vue.component('product', {
     },
     methods: {
         addToCart () {
-            this.cart += 1
+            this.$emit('add-to-cart')
           },
           remove () {
             if (this.cart === 0) return
