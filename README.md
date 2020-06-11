@@ -128,9 +128,15 @@ p :style="[styleObject1], [styleObject2]"
 
 1) Components
 2) Nested components
+3) The template property
+4) Data function
+5) Props
 
 ### What I've leaned
 
 1) How to write a Vue component. It has 2 parameters:</br>
 First, we right the name of the component.</br>
 Second, we right the options, which is almost identical to the Vue instance
+2) How to use template literals instead of adding tags into the html file
+3) Why change the data as a function istead of an object. 
+4) A prop allows us to pass data into nested components
