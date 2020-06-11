@@ -194,6 +194,19 @@ Vue.component('product-review', {
     }
 })
 
+Vue.component('product-tabs', {
+    template: `
+        <div>
+            <span class="tab"></span>
+        </div>
+    `,
+    data(){
+        return {
+            tabs: ['Reviews', 'Make a Review']
+        }
+    }
+})
+
 var app = new Vue({
     el: '#app',
     data: {
