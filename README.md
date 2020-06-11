@@ -182,4 +182,5 @@ Second, we right the options, which is almost identical to the Vue instance
 
 ### What I've learned:
 
+1) how to make a tab active
 
