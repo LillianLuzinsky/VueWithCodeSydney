@@ -128,3 +128,9 @@ p :style="[styleObject1], [styleObject2]"
 
 1) Components
 2) Nested components
+
+### What I've leaned
+
+1) How to write a Vue component. It has 2 parameters:</br>
+First, we right the name of the component.</br>
+Second, we right the options, which is almost identical to the Vue instance
