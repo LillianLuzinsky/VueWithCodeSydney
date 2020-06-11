@@ -52,9 +52,6 @@ Vue.component('product', {
                     :class="{ disabledButton: !inStock }">Add To Cart</button>
             <button @click="remove">Remove</button>
 
-            <div class="cart">
-                <p>Cart({{ cart }})</p>
-            </div>
         </div>
     </div>
     `,
@@ -77,8 +74,7 @@ Vue.component('product', {
                     variantImage: './assets/vmSocks-blue-onWhite.jpg',
                     variantQuantity: 0
                 }
-            ],
-            cart: 0   
+            ]
         }
     },
     methods: {
@@ -117,6 +113,6 @@ var app = new Vue({
     el: '#app',
     data: {
         premium: true,
-        details: 'these socks also come in red, yello and orange'
+        cart: 0   
     }
 })

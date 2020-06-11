@@ -129,7 +129,7 @@ p :style="[styleObject1], [styleObject2]"
 1) Components
 2) Nested components
 3) The template property
-4) Data function
+4) Data function instead of Data object
 5) Props
 
 ### What I've leaned
@@ -141,3 +141,11 @@ Second, we right the options, which is almost identical to the Vue instance
 3) Why change the data as a function istead of an object. 
 4) A prop allows us to pass data into nested components
 5) Don't delete the Vue instance as you still need it to display the component onto the webpage
+
+---
+
+Day 9:
+
+1) Communicating Events
+
+### What I've learned
