@@ -85,10 +85,9 @@ Vue.component('product', {
         addToCart () {
             this.cart += 1
           },
-        remove () {
-            if (this.cart === 0) {
-                return this.cart -= 1
-            }
+          remove () {
+            if (this.cart === 0) return
+            this.cart -= 1
           },
         updateProduct(index) {
             this.selectedVariant = index
