@@ -162,4 +162,4 @@ Day 9:
 Day 10:
 
 1) Forms for user reviews
-2) 2 way data binding
+2) 2 way data binding with v-model
