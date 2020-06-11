@@ -55,8 +55,9 @@ Vue.component('product', {
             <button @click="remove">Remove</button>
         </div>
 
+        <product-tabs></product-tabs>
+        
         <div>
-            <h2>Reviews</h2>
             <p v-if="!reviews.length">There are no reviews yet.</p>
             <ul>
                 <li v-for="review in reviews">
@@ -197,14 +198,17 @@ Vue.component('product-review', {
 Vue.component('product-tabs', {
     template: `
         <div>
-            <span class="tab"></span>
+            <span class="tab"
+            v-for="(tab, index) in tabs" :key="index">
+            {{ tab }}</span>
         </div>
     `,
     data(){
         return {
             tabs: ['Reviews', 'Make a Review']
         }
-    }
+    },
+    
 })
 
 var app = new Vue({
