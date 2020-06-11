@@ -154,3 +154,4 @@ Day 9:
 1) how to change the scope of Cart(0) from the product component into a global position
 2) How to refactor the app so the Add to Cart and Remove buttons continue functioning. We can't say 'this.cart' if the button no longer is part of the product component
 3) $emit allows us to click a button from a child component back to the parent component (works opposite as props?)
+4) I was able to create 2 new methods to add/remove from cart with $emit
