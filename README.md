@@ -164,7 +164,7 @@ Day 10:
 1) Forms for user reviews
 2) 2 way data binding with v-model
 3) v-for refresher
-4) Adding required fields to a form
+4) Required and custom form validation
 
 ### What I've learned:
 
@@ -172,3 +172,4 @@ Day 10:
 2) Adding the event modifier .prevent onto an event onSubmit will prevent the page from refreshing when we submit the form
 3) adding this.name = null, this.review = null, this.rating = null, will reset the values each time a form is submitted
 4) How to display the reviews object in a more readable form
+5)
