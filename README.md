@@ -144,7 +144,7 @@ Second, we right the options, which is almost identical to the Vue instance
 
 ---
 
-Day 9:
+### Day 9:
 
 1) Communicating Events
 2) $emit
@@ -159,7 +159,7 @@ Day 9:
 
 ---
 
-Day 10:
+### Day 10:
 
 1) Forms for user reviews
 2) 2 way data binding with v-model
@@ -173,3 +173,13 @@ Day 10:
 3) adding this.name = null, this.review = null, this.rating = null, will reset the values each time a form is submitted
 4) How to display the reviews object in a more readable form
 5) I can create a basic form validation that can print out the errors
+
+---
+
+### Day 11:
+
+1) Tabs to display reviews and forms seperately
+
+### What I've learned:
+
+
