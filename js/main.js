@@ -1,3 +1,5 @@
+Vue.config.devtools = true
+
 Vue.component('product-details', {
     props: {
         details: {
@@ -53,7 +55,15 @@ Vue.component('product', {
             <button @click="remove">Remove</button>
         </div>
 
-        <product-review></product-review>
+        <div>
+            <h2>Reviews</h2>
+            <p>There are no reviews yet.</p>
+            <ul>
+                
+            </ul>
+        </div>
+
+        <product-review @review-submitted="addReview"></product-review>
     </div>
     `,
     data() {
@@ -76,7 +86,7 @@ Vue.component('product', {
                     variantQuantity: 0
                 }
             ],
-            review: []
+            reviews: []
         }
     },
     methods: {
@@ -156,6 +166,7 @@ Vue.component('product-review', {
                 review: this.review,
                 rating: this.rating
             }
+            this.$emit('review-submitted', productReview)
             this.name = null
             this.review = null
             this.rating = null
