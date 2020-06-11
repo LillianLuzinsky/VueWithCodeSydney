@@ -172,4 +172,4 @@ Day 10:
 2) Adding the event modifier .prevent onto an event onSubmit will prevent the page from refreshing when we submit the form
 3) adding this.name = null, this.review = null, this.rating = null, will reset the values each time a form is submitted
 4) How to display the reviews object in a more readable form
-5)
+5) I can create a basic form validation that can print out the errors
