@@ -179,6 +179,7 @@ Second, we right the options, which is almost identical to the Vue instance
 ### Day 11:
 
 1) Tabs to display reviews and forms seperately
+2) Add content to be displayed for each selected Tab
 
 ### What I've learned:
 
