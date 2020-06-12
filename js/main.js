@@ -28,6 +28,7 @@ Vue.component('product', {
     },
     template: `
     <div id="product">
+
         <div class="product-image">
             <img v-bind:src="image" alt="Vue socks">
         </div>
@@ -42,9 +43,9 @@ Vue.component('product', {
                 <li v-for="detail in details">{{ detail }}</li>
             </ul>
 
-            <div v-for="(variant, index) in variants" 
+            <div class="color-box"
+                v-for="(variant, index) in variants" 
                 :key="variant.variantId"
-                class="color-box"
                 :style="{ background: variant.variantColor }"
                 @mouseover="updateProduct(index)">
             </div>
@@ -55,20 +56,8 @@ Vue.component('product', {
             <button @click="remove">Remove</button>
         </div>
 
-        <product-tabs></product-tabs>
-
-        <div>
-            <p v-if="!reviews.length">There are no reviews yet.</p>
-            <ul>
-                <li v-for="review in reviews">
-                    <p>{{ review.name }}</p>
-                    <p>Rating: {{ review.rating }}</p>
-                    <p>{{ review.review }}</p>
-                </li>
-            </ul>
-        </div>
-
         <product-review @review-submitted="addReview"></product-review>
+
     </div>
     `,
     data() {
@@ -193,25 +182,6 @@ Vue.component('product-review', {
             }
         }
     }
-})
-
-Vue.component('product-tabs', {
-    template: `
-        <div>
-            <span class="tab"
-            :class="{ activeTab: selectedTab === tab}"
-            v-for="(tab, index) in tabs" :key="index"
-            @click="selectedTab = tab">
-            {{ tab }}</span>
-        </div>
-    `,
-    data(){
-        return {
-            tabs: ['Reviews', 'Make a Review'],
-            selectedTab: 'Reviews'
-        }
-    },
-    
 })
 
 var app = new Vue({
