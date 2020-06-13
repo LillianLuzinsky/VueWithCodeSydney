@@ -180,6 +180,8 @@ Second, we right the options, which is almost identical to the Vue instance
 
 1) Tabs to display reviews and forms seperately
 2) Add content to be displayed for each selected Tab
+3) EventBus
+4) What is Mounted()
 
 ### What I've learned:
 
